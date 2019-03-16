@@ -1,0 +1,62 @@
+$defaultPadding: 1em;
+$defaultPurpleColor: #764abc;
+$defaultDarkPurpleColor: #40216f;
+$defaultContrastColor: #fff;
+$lightBackground: #f7f7f7;
+$defaultBorderRadius: 3px;
+$defaultBorderWidth: 1px;
+$defaultBorderStyle: solid;
+$defaultFontSize: 1em;
+
+.paddingDefault {
+  padding: $defaultPadding;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.noSelect {
+  user-select: none;
+  outline: none;
+}
+
+.cursorDefault {
+  cursor: default;
+}
+
+a {
+  color: $defaultContrastColor;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.lightBackground {
+  background: $lightBackground;
+}
+
+.lowerCase {
+  text-transform: lowercase;
+}
+
+.not {
+  text-decoration: line-through;
+}
+
+%defaultButton {
+  border: $defaultBorderWidth $defaultBorderStyle $defaultPurpleColor;
+  background: $defaultPurpleColor;
+  color: $defaultContrastColor;
+  text-transform: uppercase;
+  transition: background .3s, color .3s;
+  padding: .5em 1.25em;
+  line-height: 1.5em;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background: $defaultContrastColor;
+    color: $defaultPurpleColor;
+  }
+}
+
